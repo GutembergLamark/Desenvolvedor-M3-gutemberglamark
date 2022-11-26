@@ -1,0 +1,10 @@
+.container-footer {
+  background-color: $--black-1;
+  color: $--white;
+
+  padding: 0.625rem;
+
+  .container-footer__content {
+    @include font(400, 0.875rem, uppercase, center);
+  }
+}

@@ -1,0 +1,32 @@
+.main-content {
+  .main-content__container-filters {
+    .container-filters__filter-or-order {
+      .container-filter--open,
+      .container-order--open {
+        @include flex(flex-start, normal);
+        flex-direction: column;
+      }
+
+      .filter-or-order__container-filter {
+        .container-filter__filters {
+          .filters__price,
+          .filters__color {
+            .price-options--open,
+            .color-options--open {
+              display: block;
+            }
+          }
+          .size-options--open {
+            @include flex(left, center);
+            flex-wrap: wrap;
+            gap: 0.625rem;
+          }
+          .container__button--open {
+            @include flex(center, center);
+            gap: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,14 +5,314 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
   <title>Desenvolvedor M3</title>
   <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
+  <header class="header-content">
+    <figure class="header-content__container-img-logo">
+      <img src="./img/logo-m3.png" alt="Logo M3" class="container-img-logo__img">
+    </figure>
+    <figure class="header-content__container-img-cart">
+      <img src="./img/cart.png" alt="Trolley bag" class="container-img-cart__img">
+      <div class="container-img-cart__circle">0</div>
+    </figure>
+  </header>
 
+  <main class="main-content">
+    <section class="main-content__container-filters">
+
+      <div class="container-filters__filter-or-order">
+
+        <h1>Blusas</h1>
+
+        <div class="filter-or-order__actions">
+          <button class="actions--filter">Filtrar</button>
+          <button class="actions--order">Ordenar</button>
+        </div>
+
+        <section class="filter-or-order__container-filter container-filter--ope">
+
+          <header class="container-filter-header">
+            <h2>Filtrar</h2>
+            <img src="./img/close.png" alt="Button close section">
+          </header>
+
+          <main class="container-filter__filters">
+
+            <section class="filters__color">
+
+              <div class="filters__container-title">
+                <h3>Cores</h3>
+                <img src="./img/arrow.png" alt="Arrow dropdown">
+              </div>
+
+              <div class="color-options color-options--open">
+
+                <div class="color-options__option">
+                  <input type="radio" name="color" id="check-yellow">
+                  <label for="check-yellow">Amarelo</label>
+                </div>
+
+                <div class="color-options__option">
+                  <input type="radio" name="color" id="check-blue">
+                  <label for="check-blue">Azul</label>
+                </div>
+
+                <div class="color-options__option">
+                  <input type="radio" name="color" id="check-white">
+                  <label for="check-white">Branco</label>
+                </div>
+
+                <div class="color-options__option">
+                  <input type="radio" name="color" id="check-gray">
+                  <label for="check-gray">Cinza</label>
+                </div>
+
+                <div class="color-options__option">
+                  <input type="radio" name="color" id="check-orange">
+                  <label for="check-orange">Laranja</label>
+                </div>
+
+                <div class="color-options__option">
+                  <input type="radio" name="color" id="check-green">
+                  <label for="check-green">Verde</label>
+                </div>
+
+                <div class="color-options__option">
+                  <input type="radio" name="color" id="check-red">
+                  <label for="check-red">Vermelho</label>
+                </div>
+
+                <div class="color-options__option">
+                  <input type="radio" name="color" id="check-black">
+                  <label for="check-black">Preto</label>
+                </div>
+
+                <div class="color-options__option">
+                  <input type="radio" name="color" id="check-pink">
+                  <label for="check-pink">Rosa</label>
+                </div>
+
+                <div class="color-options__option">
+                  <input type="radio" name="color" id="check-wine">
+                  <label for="check-wine">Vinho</label>
+                </div>
+              </div>
+            </section>
+
+            <section class="filters__size">
+
+              <div class="filters__container-title">
+                <h3>Tamanhos</h3>
+                <img src="./img/arrow.png" alt="Arrow dropdown">
+              </div>
+
+              <div class="size-options size-options--open">
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>p</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>m</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>g</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>gg</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>u</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>36</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>37</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>38</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>40</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>42</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>44</span>
+                  </label>
+                </div>
+
+                <div class="size-options__option">
+                  <label>
+                    <input type="radio" name="size">
+                    <span>46</span>
+                  </label>
+                </div>
+
+              </div>
+            </section>
+
+            <section class="filters__price">
+
+              <div class="filters__container-title">
+                <h3>Faixa de preço</h3>
+                <img src="./img/arrow.png" alt="Arrow dropdown">
+              </div>
+
+              <div class="price-options price-options--open">
+
+                <div class="price-options__option">
+                  <input type="radio" name="price" id="check-50">
+                  <label for="check-50">de R$0 até R$50</label>
+                </div>
+
+                <div class="price-options__option">
+                  <input type="radio" name="price" id="check-150">
+                  <label for="check-150">de R$51 até R$150</label>
+                </div>
+
+                <div class="price-options__option">
+                  <input type="radio" name="price" id="check-300">
+                  <label for="check-300">de R$151 até R$300</label>
+                </div>
+
+                <div class="price-options__option">
+                  <input type="radio" name="price" id="check-500">
+                  <label for="check-500">de R$301 até R$500</label>
+                </div>
+
+                <div class="price-options__option">
+                  <input type="radio" name="price" id="check-more">
+                  <label for="check-more">a partir de R$500</label>
+                </div>
+
+              </div>
+            </section>
+
+            <div class="container__button container__button--open">
+              <button class="button__apply">Aplicar</button>
+              <button class="button__clean">Limpar</button>
+            </div>
+
+          </main>
+        </section>
+
+        <section class="filter-or-order__container-order container-order--ope">
+
+          <header class="container-order-header">
+            <h2>Ordenar</h2>
+            <img src="./img/close.png" alt="Button close section">
+          </header>
+
+          <main class="container-filter__orders">
+            <section class="orders__options">
+              <h3>Mais recente</h3>
+              <h3>Maior preço</h3>
+              <h3>Menor preço</h3>
+            </section>
+          </main>
+        </section>
+      </div>
+    </section>
+
+    <section class="main-content__showcase">
+      <ul class="showcase__container-products">
+        <li class="container-products__product">
+          <figure class="product__container-img">
+            <img src="./img/img_2.png" alt="Image product">
+          </figure>
+          <h2 class="product__name">Camiseta Mescla</h2>
+          <strong class="product__price">R$ 28,00</strong>
+          <span class="product__parcel">até 3x de R$9,33</span>
+          <button class="product__buy">Comprar</button>
+        </li>
+        <li class="container-products__product">
+          <figure class="product__container-img">
+            <img src="./img/img_2.png" alt="Image product">
+          </figure>
+          <h2 class="product__name">Camiseta Mescla</h2>
+          <strong class="product__price">R$ 28,00</strong>
+          <span class="product__parcel">até 3x de R$9,33</span>
+          <button class="product__buy">Comprar</button>
+        </li>
+        <li class="container-products__product">
+          <figure class="product__container-img">
+            <img src="./img/img_2.png" alt="Image product">
+          </figure>
+          <h2 class="product__name">Camiseta Mescla</h2>
+          <strong class="product__price">R$ 28,00</strong>
+          <span class="product__parcel">até 3x de R$9,33</span>
+          <button class="product__buy">Comprar</button>
+        </li>
+        <li class="container-products__product">
+          <figure class="product__container-img">
+            <img src="./img/img_2.png" alt="Image product">
+          </figure>
+          <h2 class="product__name">Camiseta Mescla</h2>
+          <strong class="product__price">R$ 28,00</strong>
+          <span class="product__parcel">até 3x de R$9,33</span>
+          <button class="product__buy">Comprar</button>
+        </li>
+      </ul>
+
+      <button class="showcase_more">Carregar mais</button>
+    </section>
+  </main>
+  <footer class="container-footer">
+    <p class="container-footer__content">M3: IMPLANTAÇÃO DE E COMMERCE VTEX</p>
+  </footer>
 </body>
-<h1>Desafio m3</h1>
 
 <script src="bundle.js"></script>
 
