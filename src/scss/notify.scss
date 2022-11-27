@@ -1,0 +1,57 @@
+.toast {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  margin: 1.875rem;
+
+  overflow: hidden;
+
+  color: $--white;
+
+  width: 250px;
+  height: auto;
+
+  padding: 0.75rem;
+
+  border-radius: 0.5rem;
+
+  box-shadow: 0 0 8px rgba(56, 56, 56, 0.8);
+
+  @include flex(space-between, center);
+
+  div {
+    @include flex(center, center);
+    flex-direction: column;
+    gap: 0.625rem;
+
+    strong {
+      color: $--white;
+      @include font(bold, 1.125rem, none, left);
+
+      width: 100%;
+    }
+
+    p {
+      color: $--white;
+
+      width: 150px;
+
+      word-wrap: break-word;
+
+      font-size: 0.875rem;
+    }
+  }
+
+  img {
+    width: 30px;
+  }
+}
+
+.container-error {
+  background-color: $--toast-error;
+}
+
+.container-success {
+  background-color: $--toast-success;
+}

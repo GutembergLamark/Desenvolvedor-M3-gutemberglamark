@@ -8,6 +8,9 @@ $--gray-3: #c7c7c7;
 
 $--white: #fff;
 
+$--toast-success: #07bc0c;
+$--toast-error: #e74c3c;
+
 html,
 body,
 div,
@@ -43,6 +46,11 @@ button {
 
 body {
   line-height: 1;
+  height: 100vh;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
 }
 ol,
 ul {

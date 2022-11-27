@@ -26,294 +26,271 @@
   </header>
 
   <main class="main-content">
-    <section class="main-content__container-filters">
 
-      <div class="container-filters__filter-or-order">
+    <div class="main-content__container-top-order">
+      <h1>Blusas</h1>
 
-        <h1>Blusas</h1>
+      <select name="order" id="order">
+        <option selected style="display: none" value="default">Ordenar por:</option>
+        <option value="recent">Mais recentes</option>
+        <option value="min-price">Menor preço</option>
+        <option value="max-price">Maior preço</option>
+      </select>
+    </div>
 
-        <div class="filter-or-order__actions">
-          <button class="actions--filter">Filtrar</button>
-          <button class="actions--order">Ordenar</button>
+    <div class="main-content__container-sections">
+      <section class="main-content__container-filters">
+        <div class="container-filters__filter-or-order">
+
+
+          <div class="filter-or-order__actions">
+            <button class="actions--filter">Filtrar</button>
+            <button class="actions--order">Ordenar</button>
+          </div>
+
+          <section class="filter-or-order__container-filter container-filter--ope">
+
+            <header class="container-filter-header">
+              <h2>Filtrar</h2>
+              <img src="./img/close.png" alt="Button close section">
+            </header>
+
+            <main class="container-filter__filters">
+
+              <section class="filters__color">
+
+                <div class="filters__container-title">
+                  <h3>Cores</h3>
+                  <img src="./img/arrow.png" alt="Arrow dropdown">
+                </div>
+
+                <div class="color-options color-options--open">
+
+                  <div class="color-options__option">
+                    <input type="radio" name="color" id="check-yellow">
+                    <label for="check-yellow">Amarelo</label>
+                  </div>
+
+                  <div class="color-options__option">
+                    <input type="radio" name="color" id="check-blue">
+                    <label for="check-blue">Azul</label>
+                  </div>
+
+                  <div class="color-options__option">
+                    <input type="radio" name="color" id="check-white">
+                    <label for="check-white">Branco</label>
+                  </div>
+
+                  <div class="color-options__option">
+                    <input type="radio" name="color" id="check-gray">
+                    <label for="check-gray">Cinza</label>
+                  </div>
+
+                  <div class="color-options__option">
+                    <input type="radio" name="color" id="check-orange">
+                    <label for="check-orange">Laranja</label>
+                  </div>
+
+                  <div class="color-options__option">
+                    <input type="radio" name="color" id="check-green">
+                    <label for="check-green">Verde</label>
+                  </div>
+
+                  <div class="color-options__option">
+                    <input type="radio" name="color" id="check-red">
+                    <label for="check-red">Vermelho</label>
+                  </div>
+
+                  <div class="color-options__option">
+                    <input type="radio" name="color" id="check-black">
+                    <label for="check-black">Preto</label>
+                  </div>
+
+                  <div class="color-options__option">
+                    <input type="radio" name="color" id="check-pink">
+                    <label for="check-pink">Rosa</label>
+                  </div>
+
+                  <div class="color-options__option">
+                    <input type="radio" name="color" id="check-wine">
+                    <label for="check-wine">Vinho</label>
+                  </div>
+                </div>
+              </section>
+
+              <section class="filters__size">
+
+                <div class="filters__container-title">
+                  <h3>Tamanhos</h3>
+                  <img src="./img/arrow.png" alt="Arrow dropdown">
+                </div>
+
+                <div class="size-options size-options--open">
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>p</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>m</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>g</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>gg</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>u</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>36</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>37</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>38</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>40</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>42</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>44</span>
+                    </label>
+                  </div>
+
+                  <div class="size-options__option">
+                    <label>
+                      <input type="radio" name="size">
+                      <span>46</span>
+                    </label>
+                  </div>
+
+                </div>
+              </section>
+
+              <section class="filters__price">
+
+                <div class="filters__container-title">
+                  <h3>Faixa de preço</h3>
+                  <img src="./img/arrow.png" alt="Arrow dropdown">
+                </div>
+
+                <div class="price-options price-options--open">
+
+                  <div class="price-options__option">
+                    <input type="radio" name="price" id="check-50">
+                    <label for="check-50">de R$0 até R$50</label>
+                  </div>
+
+                  <div class="price-options__option">
+                    <input type="radio" name="price" id="check-150">
+                    <label for="check-150">de R$51 até R$150</label>
+                  </div>
+
+                  <div class="price-options__option">
+                    <input type="radio" name="price" id="check-300">
+                    <label for="check-300">de R$151 até R$300</label>
+                  </div>
+
+                  <div class="price-options__option">
+                    <input type="radio" name="price" id="check-500">
+                    <label for="check-500">de R$301 até R$500</label>
+                  </div>
+
+                  <div class="price-options__option">
+                    <input type="radio" name="price" id="check-more">
+                    <label for="check-more">a partir de R$500</label>
+                  </div>
+
+                </div>
+              </section>
+
+              <div class="container__button container__button--open">
+                <button class="button__apply">Aplicar</button>
+                <button class="button__clean">Limpar</button>
+              </div>
+
+            </main>
+          </section>
+
+          <section class="filter-or-order__container-order">
+
+            <header class="container-order-header">
+              <h2>Ordenar</h2>
+              <img class="order-header__close" src="./img/close.png" alt="Button close section">
+            </header>
+
+            <main class="container-filter__orders">
+              <section class="orders__options">
+                <h3 class="options_recent">Mais recente</h3>
+                <h3 class="options_big-price">Maior preço</h3>
+                <h3 class="options_low-price">Menor preço</h3>
+              </section>
+            </main>
+          </section>
         </div>
+      </section>
 
-        <section class="filter-or-order__container-filter container-filter--ope">
+      <section class="main-content__showcase">
+        <ul class="showcase__container-products">
 
-          <header class="container-filter-header">
-            <h2>Filtrar</h2>
-            <img src="./img/close.png" alt="Button close section">
-          </header>
+        </ul>
 
-          <main class="container-filter__filters">
-
-            <section class="filters__color">
-
-              <div class="filters__container-title">
-                <h3>Cores</h3>
-                <img src="./img/arrow.png" alt="Arrow dropdown">
-              </div>
-
-              <div class="color-options color-options--open">
-
-                <div class="color-options__option">
-                  <input type="radio" name="color" id="check-yellow">
-                  <label for="check-yellow">Amarelo</label>
-                </div>
-
-                <div class="color-options__option">
-                  <input type="radio" name="color" id="check-blue">
-                  <label for="check-blue">Azul</label>
-                </div>
-
-                <div class="color-options__option">
-                  <input type="radio" name="color" id="check-white">
-                  <label for="check-white">Branco</label>
-                </div>
-
-                <div class="color-options__option">
-                  <input type="radio" name="color" id="check-gray">
-                  <label for="check-gray">Cinza</label>
-                </div>
-
-                <div class="color-options__option">
-                  <input type="radio" name="color" id="check-orange">
-                  <label for="check-orange">Laranja</label>
-                </div>
-
-                <div class="color-options__option">
-                  <input type="radio" name="color" id="check-green">
-                  <label for="check-green">Verde</label>
-                </div>
-
-                <div class="color-options__option">
-                  <input type="radio" name="color" id="check-red">
-                  <label for="check-red">Vermelho</label>
-                </div>
-
-                <div class="color-options__option">
-                  <input type="radio" name="color" id="check-black">
-                  <label for="check-black">Preto</label>
-                </div>
-
-                <div class="color-options__option">
-                  <input type="radio" name="color" id="check-pink">
-                  <label for="check-pink">Rosa</label>
-                </div>
-
-                <div class="color-options__option">
-                  <input type="radio" name="color" id="check-wine">
-                  <label for="check-wine">Vinho</label>
-                </div>
-              </div>
-            </section>
-
-            <section class="filters__size">
-
-              <div class="filters__container-title">
-                <h3>Tamanhos</h3>
-                <img src="./img/arrow.png" alt="Arrow dropdown">
-              </div>
-
-              <div class="size-options size-options--open">
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>p</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>m</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>g</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>gg</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>u</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>36</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>37</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>38</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>40</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>42</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>44</span>
-                  </label>
-                </div>
-
-                <div class="size-options__option">
-                  <label>
-                    <input type="radio" name="size">
-                    <span>46</span>
-                  </label>
-                </div>
-
-              </div>
-            </section>
-
-            <section class="filters__price">
-
-              <div class="filters__container-title">
-                <h3>Faixa de preço</h3>
-                <img src="./img/arrow.png" alt="Arrow dropdown">
-              </div>
-
-              <div class="price-options price-options--open">
-
-                <div class="price-options__option">
-                  <input type="radio" name="price" id="check-50">
-                  <label for="check-50">de R$0 até R$50</label>
-                </div>
-
-                <div class="price-options__option">
-                  <input type="radio" name="price" id="check-150">
-                  <label for="check-150">de R$51 até R$150</label>
-                </div>
-
-                <div class="price-options__option">
-                  <input type="radio" name="price" id="check-300">
-                  <label for="check-300">de R$151 até R$300</label>
-                </div>
-
-                <div class="price-options__option">
-                  <input type="radio" name="price" id="check-500">
-                  <label for="check-500">de R$301 até R$500</label>
-                </div>
-
-                <div class="price-options__option">
-                  <input type="radio" name="price" id="check-more">
-                  <label for="check-more">a partir de R$500</label>
-                </div>
-
-              </div>
-            </section>
-
-            <div class="container__button container__button--open">
-              <button class="button__apply">Aplicar</button>
-              <button class="button__clean">Limpar</button>
-            </div>
-
-          </main>
-        </section>
-
-        <section class="filter-or-order__container-order container-order--ope">
-
-          <header class="container-order-header">
-            <h2>Ordenar</h2>
-            <img src="./img/close.png" alt="Button close section">
-          </header>
-
-          <main class="container-filter__orders">
-            <section class="orders__options">
-              <h3>Mais recente</h3>
-              <h3>Maior preço</h3>
-              <h3>Menor preço</h3>
-            </section>
-          </main>
-        </section>
-      </div>
-    </section>
-
-    <section class="main-content__showcase">
-      <ul class="showcase__container-products">
-        <li class="container-products__product">
-          <figure class="product__container-img">
-            <img src="./img/img_2.png" alt="Image product">
-          </figure>
-          <h2 class="product__name">Camiseta Mescla</h2>
-          <strong class="product__price">R$ 28,00</strong>
-          <span class="product__parcel">até 3x de R$9,33</span>
-          <button class="product__buy">Comprar</button>
-        </li>
-        <li class="container-products__product">
-          <figure class="product__container-img">
-            <img src="./img/img_2.png" alt="Image product">
-          </figure>
-          <h2 class="product__name">Camiseta Mescla</h2>
-          <strong class="product__price">R$ 28,00</strong>
-          <span class="product__parcel">até 3x de R$9,33</span>
-          <button class="product__buy">Comprar</button>
-        </li>
-        <li class="container-products__product">
-          <figure class="product__container-img">
-            <img src="./img/img_2.png" alt="Image product">
-          </figure>
-          <h2 class="product__name">Camiseta Mescla</h2>
-          <strong class="product__price">R$ 28,00</strong>
-          <span class="product__parcel">até 3x de R$9,33</span>
-          <button class="product__buy">Comprar</button>
-        </li>
-        <li class="container-products__product">
-          <figure class="product__container-img">
-            <img src="./img/img_2.png" alt="Image product">
-          </figure>
-          <h2 class="product__name">Camiseta Mescla</h2>
-          <strong class="product__price">R$ 28,00</strong>
-          <span class="product__parcel">até 3x de R$9,33</span>
-          <button class="product__buy">Comprar</button>
-        </li>
-      </ul>
-
-      <button class="showcase_more">Carregar mais</button>
-    </section>
+        <button data-page="1" class="showcase_more">Carregar mais</button>
+      </section>
+    </div>
   </main>
   <footer class="container-footer">
     <p class="container-footer__content">M3: IMPLANTAÇÃO DE E COMMERCE VTEX</p>
   </footer>
 </body>
 
-<script src="bundle.js"></script>
+<script type="module" src="bundle.js"></script>
 
 </html>

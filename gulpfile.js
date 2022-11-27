@@ -1,5 +1,6 @@
 const path = require("path");
 
+// const imagemin = require("gulp-imagemin");
 const { series, src, dest, parallel, watch } = require("gulp");
 const webpack = require("webpack");
 const del = require("del");
@@ -83,7 +84,8 @@ function html() {
 }
 
 function img() {
-  return src(paths.img.src).pipe(dest(paths.dest + "/img"));
+  return src(paths.img.src)
+    .pipe(dest(paths.dest + "/img"))
 }
 
 const build = series(clean, parallel(styles, scripts, html, img));

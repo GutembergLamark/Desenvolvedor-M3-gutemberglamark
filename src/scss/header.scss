@@ -5,6 +5,12 @@
 
   @include flex(space-between, center);
 
+  @media only screen and (min-width: 769px) {
+    & {
+      padding: 1.25rem 2.5rem;
+    }
+  }
+
   .header-content__container-img-cart {
     position: relative;
   }
