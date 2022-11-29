@@ -1,4 +1,6 @@
 import { Api } from "../services/api"
+import { Cart } from "./cart.controller"
+import { Notify } from "./notify.controller"
 
 export class Product {
 
@@ -24,6 +26,10 @@ export class Product {
         }).format(product.parcelamento[1])}`
         productBuy.innerText = "Comprar"
 
+        productBuy.addEventListener("click", () => {
+            Cart.addProductToCart(product)
+        })
+
         containerCard.classList.add("container-products__product")
         containerImage.classList.add("product__container-img")
         productName.classList.add("product__name")
@@ -46,24 +52,32 @@ export class Product {
 
     static async listProducts(products) {
 
-        localStorage.clear()
-
         const containerProducts = document.querySelector(".showcase__container-products")
 
-        const oldProducts = JSON.parse(localStorage.getItem("@m3ecommerce:products")) || []
+        const emptyProducts = document.createElement("h2")
+        emptyProducts.innerText = "Não existem produtos para esta busca"
 
         containerProducts.innerHTML = ""
 
         if (!products) {
-            products = oldProducts.length > 0 ? oldProducts : await Api.getProducts(6)
+            products = await Api.getProducts(6)
         }
 
-        products.forEach(product => {
-            const card = Product.cardProduct(product)
+        products.length > 0 ?
+            products.forEach(product => {
+                const card = Product.cardProduct(product)
 
-            containerProducts.append(card)
-        });
+                containerProducts.append(card)
+            })
+            :
+            containerProducts.append(emptyProducts)
 
+
+        return products
+    }
+
+    static addToLocalStorage(products) {
+        localStorage.clear()
         localStorage.setItem("@m3ecommerce:products", JSON.stringify(products))
     }
 
@@ -85,18 +99,18 @@ export class Product {
 
             const oldPage = document.querySelector(".showcase_more").getAttribute("data-page")
             const page = +oldPage + 1
-            Product.changePage(page)
 
             const products = await Api.getProducts(6, page)
 
-            const removeRepeatProducts = Product.removeRepeat(products)
+            const moreProducts = [...oldProducts, ...products]
 
-            const moreProducts = Product.removeRepeat([...oldProducts, ...removeRepeatProducts])
+            if (products.length === 0) {
+                buttonMore.classList.add("more--close")
+                return Notify.error("Não há mais produtos")
+            }
 
-            removeRepeatProducts.length === 0
-                ? buttonMore.classList.add("more--close")
-                : Product.listProducts(moreProducts)
-
+            Product.listProducts(moreProducts)
+            Product.addToLocalStorage(moreProducts)
         })
     }
 }

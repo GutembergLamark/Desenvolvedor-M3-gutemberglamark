@@ -30,6 +30,8 @@
         padding: 0.625rem;
 
         border: 1px solid $--gray-2;
+
+        cursor: pointer;
       }
     }
   }
@@ -94,7 +96,7 @@
         top: 0;
 
         width: 100vw;
-        height: inherit;
+        height: 100vh;
 
         background-color: $--white;
 
@@ -106,7 +108,7 @@
 
           width: inherit;
 
-          padding: 1.25rem 0.75rem;
+          padding: 1.5rem 0.75rem;
 
           border-bottom: 1px solid $--gray-2;
 
@@ -216,7 +218,7 @@
               z-index: 1;
             }
 
-            input[type="radio"] {
+            input[type="checkbox"] {
               all: unset;
 
               position: absolute;
@@ -228,9 +230,10 @@
               left: 0;
             }
 
-            input[type="radio"]:checked {
+            input[type="checkbox"]:checked {
               border: 1px solid $--primary-color;
             }
+
             span {
               color: $--black-1;
 
@@ -251,8 +254,6 @@
             img {
               width: 18px;
               height: 13px;
-
-              // transform: rotate(270deg);
             }
           }
 
@@ -295,6 +296,8 @@
           @include flex(flex-start, center);
 
           position: inherit;
+
+          height: inherit;
 
           z-index: 0;
 
@@ -407,6 +410,14 @@
           padding: 0.4rem 0;
 
           @include font(700, 0.9rem, uppercase, center);
+
+          cursor: pointer;
+
+          transition: all 0.5s ease-in-out;
+        }
+
+        .product__buy:hover {
+          background-color: $--gray-1;
         }
       }
     }
@@ -422,6 +433,21 @@
       @include font(700, 0.9rem, uppercase, center);
 
       cursor: pointer;
+
+      transition: all 0.5s ease-in-out;
+    }
+
+    .showcase_more:hover {
+      background-color: $--second-color;
+    }
+
+    @media only screen and (min-width: 769px) {
+      .showcase_more {
+        position: absolute;
+
+        bottom: -30px;
+        right: 36%;
+      }
     }
   }
 
@@ -431,8 +457,12 @@
 
       margin: 2rem 0;
 
+      position: relative;
+
       .showcase__container-products {
         gap: 1.5rem;
+
+        margin-bottom: 6.25rem;
 
         .container-products__product {
           .product__name,

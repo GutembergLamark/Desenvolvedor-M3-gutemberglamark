@@ -1,37 +1,49 @@
 .header-content {
-  padding: 1.25rem 1.5rem;
-
   border-bottom: 2px solid $--gray-3;
 
-  @include flex(space-between, center);
+  div {
+    @include flex(space-between, center);
 
-  @media only screen and (min-width: 769px) {
-    & {
-      padding: 1.25rem 2.5rem;
+    margin: 0 auto;
+
+    max-width: 910px;
+
+    padding: 1.25rem 2.5rem;
+
+    .container-img-logo__img{
+      cursor: pointer;
     }
-  }
 
-  .header-content__container-img-cart {
-    position: relative;
-  }
+    .header-content__container-img-cart {
+      position: relative;
+    }
 
-  .container-img-cart__circle {
-    display: block;
+    .container-img-cart__circle {
+      display: block;
 
-    background-color: $--primary-color;
-    color: $--white;
+      background-color: $--primary-color;
+      color: $--white;
 
-    border-radius: 50%;
+      border-radius: 50%;
 
-    width: 12px;
-    height: 12px;
+      width: 12px;
+      height: 12px;
 
-    position: absolute;
-    bottom: 0;
-    left: 10px;
+      padding: 0;
 
-    @include font(normal, 0.625rem, normal, center);
+      position: absolute;
+      bottom: 0;
+      left: 10px;
 
-    @include flex(center, center);
+      @include font(normal, 0.625rem, normal, center);
+
+      @include flex(center, center);
+    }
+
+    @media only screen and (min-width: 769px) {
+      & {
+        padding: 1.25rem 2.5rem;
+      }
+    }
   }
 }

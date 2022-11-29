@@ -22,7 +22,7 @@ export class Notify {
     static success(message) {
         const body = document.querySelector("body")
 
-        const toast_success = Notify.toastify(message, "Success!", "toast container-success", "../../img/success.svg")
+        const toast_success = Notify.toastify(message, "Sucesso!", "toast container-success", "../../img/success.svg")
 
         body.append(toast_success)
 
@@ -32,7 +32,7 @@ export class Notify {
     static error(message) {
         const body = document.querySelector("body")
 
-        const toast_error = Notify.toastify(message, "Error", "toast container-error", "../../img/error.svg")
+        const toast_error = Notify.toastify(message, "Erro", "toast container-error", "../../img/error.svg")
 
         body.append(toast_error)
 
@@ -65,5 +65,13 @@ export class Notify {
         setTimeout(() => {
             document.querySelector("body").removeChild(toastify)
         }, 6000)
+    }
+
+    static clearToastify(toast) {
+        const toastify = document.querySelector(toast)
+
+        if (toastify) {
+            document.querySelector("body").removeChild(toastify)
+        }
     }
 }

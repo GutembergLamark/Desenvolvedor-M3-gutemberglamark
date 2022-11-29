@@ -2,19 +2,28 @@ const serverurl = process.env.SERVER_API;
 
 console.log("Dev m3", serverurl);
 
-import { Notify } from "./controllers/notify.controller";
 import { Order } from "./controllers/order.controller"
 import { Product } from "./controllers/product.controller"
+import { Filter } from "./controllers/filter.controller"
+import { Cart } from "./controllers/cart.controller"
 
+Product.listProducts().then(products => {
+    Product.addToLocalStorage(products)
+})
 
+Product.loadMoreProducts()
 
-Notify.error("Erro ao adicionar item ao carrinho")
-// Notify.success("Item adicionado ao carrinho")
 Order.mostRecent()
 Order.bigPrice()
 Order.lowPrice()
-Order.menuOrder()
+Order.openMenuOrder()
 
-Product.listProducts()
+Filter.markOrNotMark()
+Filter.openMenuFilter()
+Filter.cleanFilter()
+Filter.openDropdonwColor()
+Filter.openDropdonwSize()
+Filter.openDropdonwPrice()
 
-Product.loadMoreProducts()
+Cart.openMenuCart()
+Cart.listProductsCart()

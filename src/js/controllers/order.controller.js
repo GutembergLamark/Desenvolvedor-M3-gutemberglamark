@@ -2,7 +2,7 @@ import { Product } from "./product.controller"
 
 export class Order {
 
-    static menuOrder() {
+    static openMenuOrder() {
         const showcase = document.querySelector(".main-content__showcase")
 
         const buttonOpen = document.querySelector(".actions--order")

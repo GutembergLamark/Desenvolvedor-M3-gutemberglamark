@@ -5,6 +5,8 @@
       .container-order--open {
         @include flex(flex-start, normal);
         flex-direction: column;
+
+        animation: transitionMenuFilterOrder 1s ease-in-out;
       }
 
       .filter-or-order__container-filter {
@@ -44,8 +46,21 @@
       display: none;
     }
   }
+
+  .container-cart--open {
+    display: block;
+  }
 }
 
 .container-footer--close {
   display: none;
+}
+
+@keyframes transitionMenuFilterOrder {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
