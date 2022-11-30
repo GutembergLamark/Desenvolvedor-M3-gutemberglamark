@@ -1,79 +1,83 @@
-# Venha ser um desenvolvedor da Digital M3
+<h1 align="center">Agência digital M3 teste técnico</h1>
 
-Ola, somos a Agência Digital M3, uma agência voltada para ramo de comercio eletrônico, trabalhamos com implantação, migração, evolução e otmização de e-commerces. Estamos com a sede de desenvolvimento em Nova Friburgo RJ. Mas contratamos pessoas de todo o pais, visto que trabalhamos 100% home office.  
-> R. Helena Coutinho, 41 
-> Braunes, Nova Friburgo/RJ
-[https://goo.gl/maps/2mWagcctnrGdtFhBA]( https://goo.gl/maps/2mWagcctnrGdtFhBA )
+<br/>
+<br/>
 
-Estamos procurando Desenvolvedores(as) `Front-end`, com sólidos conhecimentos em HTML, CSS e JS para projetar interfaces e entregar a melhor experiência para os consumidores visando sempre a otimização do código e agilidade no desenvolvimento.
+<h2 align="center">🔨 Tecnologias utilizadas na aplicação</h2>
 
-## O que procuramos
+<br/>
 
-### Requisitos Obrigatórios
+- ### JavaScript - Linguagem
+- ### Gulp - Otimização de imagens
+- ### Sass - Bibliotecas de estilização
+- ### HTML5 - Linguagem de marcação de texto
 
-- Html5, css3;
-- Javascript;
-- Consumo de APIs.
-- Versionamento Git;
-- Grunt/gulp;
-- Sass/less;
-- Sites responsivos;
-- Iniciativa, criatividade e colaboração;
-- Boas práticas: reutilização de código, semântica, organização, performance.
+<br/> 
+ 
+## Links de acesso
 
-### Desejáveis:
+- <a href="https://github.com/GutembergLamark/Desenvolvedor-M3-gutemberglamark">Repositório</a>
 
-- Experiência com algum CMS
-- Conhecimento/Experiência em Vtex
-- Nodejs
-- Typescript
-- React
+#
 
-----
+## ✅ Como executar a aplicação localmente
 
-## Como se candidatar a vaga
+<br/>
 
-- [Crie um fork desse projeto;](https://github.com/agenciam3/Desenvolvedor-M3/fork)
-- No seu fork, codifique o layout seguindo as instruções abaixo;
-- Atualize o readme com as instruções necessárias para rodar o seu código;
-- Adicione também seu e-mail de contato ao readme do projeto ( caso seu e-mail do github esteja privado )
-- envie para [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Vaga%20DEV%20-%20Digital%20M3)
+### Uma ferramenta é essencial para a execução da aplicação:
 
+- [Node](https://nodejs.org/en/)
 
-**obs.**: link do projeto [github.com/agenciam3/Desenvolvedor-M3](https://github.com/agenciam3/Desenvolvedor-M3)
+<h3>1 - Primero passo:</h3>
 
-### Instruções para o teste
+#
 
-O layout se encontra no [figma](https://www.figma.com/file/hPfcV6VClVfkHCtje9997Q/Desafio-m3?node-id=0%3A1) e pode ser encontrado images dele em "layout".
+<p>Vamos instalar as dependências do projeto:</p>
 
-### Dependencias
+<br/>
 
-O projeto possui um setup pronto no qual há a necessidade de possuir o nodejs instalado na versão 14 ou superior.
+```bash
+# Abra o seu terminal na raiz do projeto e execute o seguinte comando:
 
-Para instalar as dependencias só é preciso executar o comando: `npm install`
+$npm install
+```
 
-O dar start no server e nos processos para desenvolvimento é necessário rodar o comando: `npm start `
+<br/>
 
-Uma ver que o comando é dado ele irá levantar 2 servidores, sendo eles:
- - um para acessar o front-end que roda na porta 3000. No qual pode ser acessado pela url: http://localhost:3000
- - um para o json-server que irá export uma api com a lista de produtos que roda na porta 5000. Para acessar os produtos é na url:  http://localhost:5000/products
+<h3>2 - Segundo passo:</h3>
 
-### Objetivo
+#
 
-O objetivo desse desafio é avaliar a seus conhecimentos fundamentais de front end, por isso pedimos que não utilize nenhum framework, porem caso deseje utilizar frameworks como react, é possivel adicionar ao setup.
-### Obrigatório
+<p>Agora estamos prontos para iniciar a aplicação:</p>
 
-- HTML5 e CSS3
-- Requisição a API para obter os produtos
-- Funcionalidade: Filtrar produtos por cor, tamanho e preço.
-- Funcionalidade: Adicionar produto ao carrinho.
-- Funcionalidade: Carregar mais produtos.
-- Não utilizar Bootstrap, Foundation Css, Semantic ui ou semelhantes ;
-- Responsividade
+<br/>
 
-#### Bônus
+```bash
+# Abra o seu terminal na raiz do projeto e execute o seguinte comando:
 
-- Javascript sem plugins e modular
-- Adição de processo no gulp para otimizar imagens
+$npm start
+```
 
-##### Dúvidas: [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Dúvida%20Vaga%20DEV%20-%20Digital%20M3)
+<br/>
+
+<h3>3 - Terceiro passo:</h3>
+
+#
+
+<p>Abrindo o projeto:</p>
+
+<br/>
+
+#### Abra o seu navegador padrão na seguinte url: <a href="http://localhost:3000">http://localhost:3000</a>
+
+#
+
+<h1 align="center">Desenvolvedor</h1>
+
+<h2 align="center">Gutemberg Lamark Araújo Batista</h2>
+
+<br/>
+
+<h2 align="center"><img src="https://avatars.githubusercontent.com/u/89531845?v=4" width="250px"></h2>
+
+<h2 align="center">Email: <a href="mailto:gtmbrglamark@gmail.com">gtmbrglamark@gmail.com</a></h2>
