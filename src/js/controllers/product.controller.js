@@ -1,6 +1,5 @@
 import { Api } from "../services/api"
 import { Cart } from "./cart.controller"
-import { Notify } from "./notify.controller"
 
 export class Product {
 
@@ -106,7 +105,6 @@ export class Product {
 
             if (products.length === 0) {
                 buttonMore.classList.add("more--close")
-                return Notify.error("Não há mais produtos")
             }
 
             Product.listProducts(moreProducts)

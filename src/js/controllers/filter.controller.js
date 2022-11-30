@@ -43,17 +43,23 @@ export class Filter {
         const formColor = document.querySelector(".color-options")
         const formSize = document.querySelector(".size-options")
         const formPrice = document.querySelector(".price-options")
+        const selectOrder = document.getElementById("order")
+
 
         if (!element) {
             element = document.querySelector(".container-img-logo__img")
         }
 
         element.addEventListener("click", () => {
+            const products = JSON.parse(localStorage.getItem("@m3ecommerce:products")) || []
+
             formColor.reset()
             formSize.reset()
             formPrice.reset()
 
-            Product.listProducts()
+            selectOrder.value = "default"
+
+            Product.listProducts(products)
         })
     }
 
@@ -61,8 +67,12 @@ export class Filter {
         const formColor = document.querySelector(".color-options")
         const buttonDropdown = document.querySelector(".dropdown-color")
 
+        const width = window.screen.width
+
         buttonDropdown.addEventListener("click", () => {
-            formColor.classList.toggle("color-options--open")
+            if (width < 769) {
+                formColor.classList.toggle("color-options--open")
+            }
         })
     }
 
@@ -70,8 +80,12 @@ export class Filter {
         const formSize = document.querySelector(".size-options")
         const buttonDropdown = document.querySelector(".dropdown-size")
 
+        const width = window.screen.width
+
         buttonDropdown.addEventListener("click", () => {
-            formSize.classList.toggle("size-options--open")
+            if (width < 769) {
+                formSize.classList.toggle("size-options--open")
+            }
         })
     }
 
@@ -79,16 +93,22 @@ export class Filter {
         const formPrice = document.querySelector(".price-options")
         const buttonDropdown = document.querySelector(".dropdown-price")
 
+        const width = window.screen.width
+
         buttonDropdown.addEventListener("click", () => {
-            formPrice.classList.toggle("price-options--open")
+            if (width < 769) {
+                formPrice.classList.toggle("price-options--open")
+            }
         })
     }
 
     static markOrNotMark() {
         const checks = document.querySelectorAll(".option--color, .option--size, .option--price")
+        const selectOrder = document.getElementById("order")
 
         checks.forEach(check => {
             check.addEventListener("change", (e) => {
+                selectOrder.value = "default"
                 Filter.filterProducts()
             })
         })

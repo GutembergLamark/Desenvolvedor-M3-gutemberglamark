@@ -1,7 +1,7 @@
 .main-content__container-cart {
   display: none;
 
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
 
@@ -44,6 +44,10 @@
 
     h2 {
       @include font(400, 1.5rem, uppercase, center);
+    }
+
+    img {
+      cursor: pointer;
     }
   }
 
@@ -90,6 +94,8 @@
           width: 15px;
 
           transition: all 0.5s ease-in-out;
+
+          cursor: pointer;
         }
       }
 

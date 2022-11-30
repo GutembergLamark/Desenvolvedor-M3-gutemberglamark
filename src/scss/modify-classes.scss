@@ -9,6 +9,10 @@
         animation: transitionMenuFilterOrder 1s ease-in-out;
       }
 
+      .container-order--open {
+        height: 100vh;
+      }
+
       .filter-or-order__container-filter {
         .container-filter__filters {
           .filters__price,
@@ -49,6 +53,8 @@
 
   .container-cart--open {
     display: block;
+
+    animation: transitionMenuCart 1s ease-in-out;
   }
 }
 
@@ -62,5 +68,14 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes transitionMenuCart {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
